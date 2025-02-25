@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+.hh1{
+    color:black;
+    margin-left: 40px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.table-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%; /* Adjust width for larger screens */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+td:first-child {
+    width: 10%;
+    text-align: center;
+}
+
+td:last-child {
+    width: 90%;
+}
+
+/* 🌟 Responsive Design using Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-box {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+/////
+/* Footer Main Styles */
+.footer {
+    background-color: #333;
+    color: rgb(32, 28, 28);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f4f4f4;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin: 8px 0;
+}
+
+.footer-box ul li a {
+    color: rgb(16, 15, 15);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #f4a261;
+    padding-left: 5px;
+}
+
+.footer-box i {
+    margin-right: 8px;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #222;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
