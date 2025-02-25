@@ -255,3 +255,118 @@ h1 {
     }
 }
 
+///////////////////////////////
+/* Team Section Styling */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f0f0;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Team Card Styling */
+.team-card {
+    background: #efe9e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Name & Role */
+.team-card h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Instagram Button */
+.social-icons a:nth-child(1) {
+    background-color: #E1306C;
+}
+
+.social-icons a:nth-child(1):hover {
+    background-color: #c91e5a;
+}
+
+/* GitHub Button */
+.social-icons a:nth-child(2) {
+    background-color: #333;
+}
+
+.social-icons a:nth-child(2):hover {
+    background-color: #222;
+}
+
+/* 🌍 Media Queries for Responsiveness */
+
+/* For tablets (768px or smaller) */
+@media screen and (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 90%;
+    }
+}
+
+/* For mobile devices (480px or smaller) */
+@media screen and (max-width: 480px) {
+    .team-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .social-icons a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
